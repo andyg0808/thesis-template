@@ -24,7 +24,8 @@
 \usepackage[breaklinks=true,hidelinks,pdfusetitle]{hyperref}
 \usepackage{cleveref}
 \usepackage{ifthen}
-
+\usepackage[style=trad-abbrv]{biblatex}
+\addbibresource{../../bibliography.bib}
 \makeindex
 \makeglossaries
 
@@ -41,8 +42,6 @@
 \titleformat*{\subsubsection}{\small\bfseries}
 \titleformat*{\paragraph}{\small\bfseries}
 \titleformat*{\subparagraph}{\small\bfseries}
-
-\bibliographystyle{abbrv}
 
 \setlength{\parindent}{0.25in} \setlength{\parskip}{6pt}
 \geometry{verbose,nohead,tmargin=1in,bmargin=1in,lmargin=1.5in,rmargin=1in}
@@ -113,7 +112,7 @@
 \input{chapter-outline}
 
 \nocite{*}
-\bibliography{bibliography}
+\printbibliography
 
 % Indents Appendix in Table of Contents
 \makeatletter
